@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+  
+    
+<style>
+
+    
+    
+div#test{ border:#000 1px solid; padding:10px 40px 40px 40px;  text-align: center; }
+h2#test_status{text-align: center;  }
+  
+ 
+
+.navbar-default {
+    background-color: #e67e22;
+    border-color: #d35400;
+}
+
+.navbar-default .navbar-brand {
+    color: #ecf0f1;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffe6d1;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffe6d1;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffe6d1;
+    background-color: #d35400;
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ffe6d1;
+    background-color: #d35400;
+}
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #ecf0f1;
+    border-bottom-color: #ecf0f1;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #ffe6d1;
+    border-bottom-color: #ffe6d1;
+}
+/* Р¦РІРµС‚ СЃС‚СЂРµР»РѕС‡РєРё (С‚СЂРµСѓРіРѕР»СЊРЅРёС‡РєР°), РѕС‚РєСЂС‹РІС€РµРіРѕСЃСЏ РїСѓРЅРєС‚Р° РјРµРЅСЋ */
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #ffe6d1;
+    border-bottom-color: #ffe6d1;
+}
+/* CSS СЃС‚РёР»Рё РґР»СЏ РјРѕР±РёР»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ */
+/* Р¦РІРµС‚ СЂР°РјРєРё Сѓ РєРЅРѕРїРєРё, РєРѕС‚РѕСЂР°СЏ РѕС‚РєСЂС‹РІР°РµС‚ РјРµРЅСЋ */
+.navbar-default .navbar-toggle {
+    border-color: #d35400;
+}
+/* Р¦РІРµС‚ С„РѕРЅР° РєРЅРѕРїРєРё (РєРѕС‚РѕСЂР°СЏ РѕС‚РєСЂС‹РІР°РµС‚ РјРµРЅСЋ) РїСЂРё РїРѕРґРЅРµСЃРµРЅРёРё Рє РЅРµР№ РєСѓСЂСЃРѕСЂР° РјС‹С€РєРё РёР»Рё РїСЂРё РЅР°С…РѕР¶РґРµРЅРёРё РµС‘ РІ С„РѕРєСѓСЃРµ */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #d35400;
+}
+/* Р¦РІРµС‚ РїРѕР»РѕСЃРѕС‡РµРє РІ РєРЅРѕРїРѕС‡РєРµ, РєРѕС‚РѕСЂР°СЏ РѕС‚РєСЂС‹РІР°РµС‚ РјРµРЅСЋ */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+/* Р¦РІРµС‚ РїСѓРЅРєС‚РѕРІ РјРµРЅСЋ РІ СЂР°СЃРєСЂС‹РІР°СЋС‰РёС…СЃСЏ СЃРїРёСЃРєР°С… */
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ecf0f1;
+  }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffe6d1;
+        background-color: #d35400;
+    }
+}  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+.footer{
+ position: absolute;
+	    display: block;
+      
+	    width: 100%;
+      height: 75px;
+	
+	    bottom: 0px !important;
+	      
+    
+background-image: url("footer.png");
+}
+
+</style>
+<script>
+var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
+var questions = [
+    [ "Коли була розроблена система HACCP?", "60-х років минулого століття", "90-х років минулого століття", "2000-ні", "A" ],
+     [ "Яке ISO може бути інтегрована з НАССР?", "ISO 9001", "ISO 26000", "ISO 22000", "C" ],
+    [ "Коли НАССР стає обов'язковою сертифікацією у сфері морепродуктів а також для багатьох великих і малих виробників м'яса і птиці?", "2010", "1997-1999", "2005-2007", "B" ],
+   
+    [ "Яке ISO може бути інтегрована з НАССР?", "ISO 9001", "ISO 26000", "ISO 22000", "C" ],
+  
+    [ "Скільки в системі НАССР виділяють  принципів?", "7", "5", "10", "A" ],
+    
+    [ "Скільки кроків щоб впровадити НАССР? ", "12", "9", "7", "A" ]
+];
+function _(x){
+	return document.getElementById(x);
+}
+function renderQuestion(){
+	test = _("test");
+	if(pos >= questions.length){
+		test.innerHTML = "<h2> Вы відповіли правильно "+correct+" з "+questions.length+" завдань </h2>";
+		_("test_status").innerHTML = "Тест завершився";
+		pos = 0;
+		correct = 0;
+		return false;
+	}
+	_("test_status").innerHTML = " Питання "+(pos+1)+" з "+questions.length;
+	question = questions[pos][0];
+	chA = questions[pos][1];
+	chB = questions[pos][2];
+	chC = questions[pos][3];
+	test.innerHTML = "<h3>"+question+"</h3>";
+	test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br><br>";
+	test.innerHTML += "<button onclick='checkAnswer()'>Відповідь</button>";
+}
+function checkAnswer(){
+	choices = document.getElementsByName("choices");
+	for(var i=0; i<choices.length; i++){
+		if(choices[i].checked){
+			choice = choices[i].value;
+		}
+	}
+	if(choice == questions[pos][4]){
+		correct++;
+	}
+	pos++;
+	renderQuestion();
+}
+window.addEventListener("load", renderQuestion, false);
+</script>
+</head>
+<body>
+  
+<header> 
+   <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">HACCP</a>
+    </div>
+    
+  </div>
+</nav>    
+     
+       
+       
+</header>
+    
+  
+    <br>
+     <br>
+     <br>
+     <br>
+     <br>
+    <div id=conteiner>
+    
+<h2 id="test_status"></h2>
+<div id="test"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
